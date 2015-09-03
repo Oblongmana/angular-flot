@@ -2,6 +2,11 @@
 /* global angular */
 /* global jQuery */
 
+/* commonjs package manager support (eg componentjs) */
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
+  module.exports = 'angular-flot';
+}
+
 angular.module('angular-flot', []).directive('flot', function () {
   return {
     restrict: 'EA',
